@@ -1,0 +1,78 @@
+title: 静态博客生成系统介绍
+---
+
+静态博客的流行，跟github的pages服务是分不开的。
+
+
+----------
+目前的个人博客，大部分是wordpress，如果有php免费空间，貌似我也不会花时间弄静态博客。相对于wordpress种类繁多的主题以及丰富的插件程序扩展。不差钱的同学真的应该考虑搭建一个wordpress 玩玩。毕竟静态博客是需要有一定技术基础的，而且相对来说麻烦一点。相对于你在上面耗费的时间，我认为有点得不偿失。
+
+> 下面是给喜欢折腾又不愿花钱的同学看的。
+
+### 目前博客提供商的缺点？
+
+> 限制多 ，广告多，不专业
+
+	1. 所谓限制多，就是要更改css很难，基本不能加入script标签。
+	2. 不专业，专业的博客提供商页面排版单一，个性化的设置受限。
+	3. 广告，sina，163的广告不要太烦人。
+
+### 静态博客的缺点
+
+	对不熟悉代码的人来说有点太难了。
+
+### 静态博客的原理
+>
+我们这里以markdown为例：
+markdown是种标记语言，markdown的作者从html语言中抽取了几种常用标记。使用者通过使用这些简单标记，书写文档。然后通过markdown文件解析工具，解析生成对应html文件，纯的html文件比较难看，而且互相之前没有链接关系，静态博客程序主要做下面几个工作：
+
+	1. 调用markdown解析程序，把markdown文件解析成html文件。
+	2. 给生成的html添加css，使之看起来美观。
+	3. 增加html文件之间超链接。
+
+这样我们把生成的html文件上传到静态空间，我们的博客就搭建好了。
+
+
+
+
+
+
+
+
+
+
+Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [trobuleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+## Quick Start
+
+### Create a new post
+
+``` bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](http://hexo.io/docs/writing.html)
+
+### Run server
+
+``` bash
+$ hexo server
+```
+
+More info: [Server](http://hexo.io/docs/server.html)
+
+### Generate static files
+
+``` bash
+$ hexo generate
+```
+
+More info: [Generating](http://hexo.io/docs/generating.html)
+
+### Deploy to remote sites
+
+``` bash
+$ hexo deploy
+```
+
+More info: [Deployment](http://hexo.io/docs/deployment.html)
